@@ -7,9 +7,57 @@ body{
    
 
 }
+
+main{
+    display:flex;
+
+    align-items: center;
+    flex-direction:column;
+}
+
 h1{
     font-size:50px;
     color:white;
+}
+/* ---Nav bar */
+.topnav {
+    overflow: hidden;
+    background-color:navy;
+    width:100%
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  .button{
+      background-color: mediumvioletred;
+       margin-right:80px;
+      margin-top:50px; 
+      padding:10px 20px;
+      color:black;
+      font-weight:300;
+     
+  }
+
+  /* ---Background-Image */
+  .flexible-container{
+    display:flex;
+  
+    margin-bottom:150px;
+   
 }
 
 .half-width{
@@ -23,7 +71,7 @@ h1{
     
 }
 .half-width:hover{
-    background-color:olivedrab;
+    background-color:darkcyan;
     transform: translate(500px);
 
 }
@@ -35,12 +83,7 @@ h1{
 .half-width img {
     width: 70%;
 }
-.flexible-container{
-    display:flex;
-  
-    margin-bottom:150px;
-   
-}
+
 .link-button{
     text-decoration: cornflowerblue;
     background-image:linear-gradient(orange,orangered); 
@@ -49,14 +92,9 @@ h1{
     color:black;
     font-weight:600;
     margin: 5px;
-    
-    
-    
     transition: transform 1s ease-out .2s;
-   
-
-  width: 200px;
-  height: 150px;  
+    width: 200px;
+    height: 150px;  
 }
 link:hover{
     width:300px;
@@ -64,13 +102,19 @@ link:hover{
     transform: translate(500px);
 
 }
+ 
+/* All Players part */
 
-
-.player{
-    /* display:flex;
+.players{
     display:grid;
     justify-content: center;
-    align-items: center; */
+    
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:10px;
+
+}
+.player{
+    
 
       
     width:350px;
@@ -79,6 +123,7 @@ link:hover{
     margin-right:5%;
     padding-left:10px;
     padding-right:20px;
+    text-align:center;
   
    
     padding-top:0;
@@ -95,18 +140,6 @@ link:hover{
 
 }
 
-/* .player img{
-    width:240px;
-    height:470px;
-    align-items: center;
-} */
- 
-/* .player{
-    display:flex;
-    align-items: center;
-}  */
-
-
 
 .my-player{
     padding-left:5px;
@@ -114,38 +147,27 @@ link:hover{
     
 }
 
-main{
-    display:flex;
-
-    align-items: center;
-    flex-direction:column;
-}
-
-.players{
-    display:grid;
-    justify-content: center;
-    
-    grid-template-columns: repeat(3,1fr);
-    grid-row-gap:10px;
-
-}
-.player{
-    text-align:center;
-}
 
 
-.player-name{
-    /* margin-left:16px; */
-    font-size:18px;
 
-}
 .player img{
-    width:200px;
+    width: 67.33%;
     height:200px;
     
-    
+   margin-top: 20px;
+   margin-bottom: 5px;
+   margin-right: 5px;
+   margin-left: 12px;
+   
+    border-radius: 15px;
+}
+.player-description{
+    padding-left:5px;
+    padding-right:5px;
     
 }
+
+/* -----------Highlight Of Copa America */
 
 .mymatch{
     font-size:50px;
@@ -163,6 +185,22 @@ main{
     display:flex;
     margin-bottom:150px;
 }
+
+.match-width{
+    margin-top:70px;
+}
+.match-width img{
+   margin-top:70px;
+}
+
+/* ---------- Footer and Social ICon */
+.footer-paragraph{
+    text-align:center;
+}
+.footer{
+    margin-top:40px;
+}
+
 .social-icons {
     margin-bottom: 50px;
     text-align: center;
@@ -181,60 +219,99 @@ main{
     border-radius:25px;
     transition: .5s;
 }
-.footer-paragraph{
-    text-align:center;
+
+
+.bonus-img{
+    width:50%;
+    
+        background-image:url(images/Players/bonus2-img.jpg);
+        background-repeat: no-repeat;
+        background:navy;
+        
+      
+       
+        transition: transform 1s ease-in .2s;
+        
+}
+.bonus-img:hover{
+    background-color:cornflowerblue;
+    transform: translate(500px);
+
 }
 
 
+.bonus-img:hover .football {
+    transform: translate(500px);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: red;
+    position: relative;
+    left: 500px;
+    transition: transform 1s ease-out .2s;
+}
 
-  .topnav {
-    overflow: hidden;
-    background-color:navy;
-    width:100%
-  }
+
+/* BEST PLAYER */
+.best-players{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:24px;
+}
+
+.best-player .best-player-banner img{
+    width:224px;
+    height:104px;
+    border-radius:5px;
+}
+.player-info{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    background-color:#FFFFFF;
+    width:870px;
+    padding:33px ;
+    border-radius: 5px;
   
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav-right {
-    float: right;
-  }
-  .button{
-      background-color: mediumvioletred;
-      margin-right:80px;
-      margin-top:50px;
-  }
-  .player-description{
-    padding-left:5px;
-    padding-right:5px;
+    margin-top:21px;
+    
     
 }
+.best-players:hover .best-player {
+    transform: scale(1.3);
+    transition: transform 2s ease-in-out;
+}
+.fa-star{
+    font-size:12px;
+}
+.fa-star.filled{
+    color:#FFC014;
 
-    
-.player img{
-    width: 67.33%;
-   margin-top: 20px;
-   margin-bottom: 5px;
-   margin-right: 5px;
-   margin-left: 12px;
-    border-radius: 15px;
 }
-.match-width{
-    margin-top:70px;
-}
-.match-width img{
-   margin-top:70px;
+.fa-star.empty{
+    color:#858072;
 }
 
   
+    
+
+  /* ------Media Query------------ */
+
+@media (max-width:700px) {
+    .player {
+        background-color: orange;
+        margin-bottom: 20px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+
+}
+
+
 
