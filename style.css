@@ -229,8 +229,11 @@ main{
    margin-left: 12px;
     border-radius: 15px;
 }
+.match-width{
+    margin-top:70px;
+}
 .match-width img{
-   margin-top:30px;
+   margin-top:70px;
 }
 
   
