@@ -110,7 +110,12 @@ link:hover{
     justify-content: center;
     
     grid-template-columns: repeat(3,1fr);
-    grid-row-gap:10px;
+    grid-row-gap:30px;
+    grid-column-gap:20px;
+  
+    padding-left:10px;
+    padding-right:10px;
+   
 
 }
 .player{
@@ -124,6 +129,7 @@ link:hover{
     padding-left:10px;
     padding-right:20px;
     text-align:center;
+    
   
    
     padding-top:0;
