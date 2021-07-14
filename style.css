@@ -300,18 +300,29 @@ link:hover{
 
   /* ------Media Query------------ */
 
-@media (max-width:700px) {
-    .player {
-        background-color: orange;
-        margin-bottom: 20px;
+/* Mobile devices */
+
+@media only screen and(max-width:680px){
+    .container{
+        width:80%;
     }
-
-    .flex-container {
-        flex-direction: column;
+    .players,.best-player{
+        
+        grid-template-columns: repeat(2,1fr);
     }
-
-
+    .player{
+        flex-direction: row;
+    }
+     
 }
 
-
+/* table devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .players ,.best-players{
+        background-color:grey;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+   
+}
 
