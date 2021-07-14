@@ -11,10 +11,7 @@ h1{
     font-size:50px;
     color:white;
 }
-.mymatch{
-    font-size:50px;
-    color:black;
-}
+
 .half-width{
     background-image:url(images/Players/banner.png);
     background-repeat: no-repeat;
@@ -34,18 +31,13 @@ h1{
     width:50%;
     padding-left:5%;
 }
-.match-width{
-    width:50%;
-    padding-left:5%;
-}
-.match-width img{
-    width:60%;
-}
+
 .half-width img {
     width: 70%;
 }
 .flexible-container{
     display:flex;
+  
     margin-bottom:150px;
    
 }
@@ -62,8 +54,6 @@ h1{
     
     transition: transform 1s ease-out .2s;
    
-  
-   
 
   width: 200px;
   height: 150px;  
@@ -77,34 +67,26 @@ link:hover{
 
 
 .player{
-    display:flex;
-    align-items: center;
+    /* display:flex;
+    display:grid;
+    justify-content: center;
+    align-items: center; */
 
-       
-        width:90%;
-        height: 100%;
-    margin-left:5%;
+      
+    width:350px;
+    height:550px;
+    margin-left:10%;
     margin-right:5%;
     padding-left:10px;
-    padding-right:10px;
-    padding-top:15px;
-
+    padding-right:20px;
   
    
-        
-       
-        background: #FFFFFF;
-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding-top:0;
+     background: #FFFFFF;
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     
     }
-    .players{
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-row-gap:190px;
-        margin-left:16px;
-       
     
-    }
 
 
 .player-name{
@@ -113,23 +95,17 @@ box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 
 }
 
-.player img{
-    width:740px;
+/* .player img{
+    width:240px;
     height:470px;
     align-items: center;
-}
-
-
-.players{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-row-gap:30px;
-
-}
-.player{
+} */
+ 
+/* .player{
     display:flex;
     align-items: center;
-}
+}  */
+
 
 
 .my-player{
@@ -137,6 +113,7 @@ box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding-right:5px;
     
 }
+
 main{
     display:flex;
 
@@ -146,28 +123,42 @@ main{
 
 .players{
     display:grid;
+    justify-content: center;
+    
     grid-template-columns: repeat(3,1fr);
-    grid-row-gap:30px;
+    grid-row-gap:10px;
 
 }
 .player{
-    display:flex;
-    align-items: center;
+    text-align:center;
 }
 
+
 .player-name{
-    margin-left:16px;
+    /* margin-left:16px; */
     font-size:18px;
 
 }
 .player img{
     width:200px;
-    height:290px;
+    height:200px;
+    
+    
     
 }
-.p{
-    text-align: center;
+
+.mymatch{
+    font-size:50px;
+    color:black;
 }
+.match-width{
+    width:50%;
+    padding-left:5%;
+}
+.match-width img{
+    width:70%;
+}
+
 .match-container{
     display:flex;
     margin-bottom:150px;
@@ -194,4 +185,53 @@ main{
     text-align:center;
 }
 
+
+
+  .topnav {
+    overflow: hidden;
+    background-color:navy;
+    width:100%
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  .button{
+      background-color: mediumvioletred;
+      margin-right:80px;
+      margin-top:50px;
+  }
+  .player-description{
+    padding-left:5px;
+    padding-right:5px;
+    
+}
+
+    
+.player img{
+    width: 67.33%;
+   margin-top: 20px;
+   margin-bottom: 5px;
+   margin-right: 5px;
+   margin-left: 12px;
+    border-radius: 15px;
+}
+.match-width img{
+   margin-top:30px;
+}
+
+  
 
